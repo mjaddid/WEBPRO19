@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript" src="Function.js"></script>
+	<h2>Kalkulator by Muh Mujaddid A (1301174184)</h2>
+	<form id="kalkulator">
+	<table>
+		<tr>
+				<td colspan="4">
+					<input type="textview" id="hasil" readonly>
+				</td>
+		</tr>
+			<tr>
+				<td> <input type="button" class="angka" value="C" onclick="hapus()"> </button> </td>
+				<td> <input type="button" class="angka" value="<" onclick="del()"> </button> </td>
+				<td> <input type="button" class="angka" value="/" onclick="input('/')"> </button> </td>
+				<td> <input type="button" class="angka" value="x" onclick="input('*')"> </button> </td>
+			</tr>
+			<tr>
+				<td> <input type="button" class="angka" value="7" onclick="input(7)"> </button> </td>
+				<td> <input type="button" class="angka" value="8" onclick="input(8)"> </button> </td>
+				<td> <input type="button" class="angka" value="9" onclick="input(9)"> </button> </td>
+				<td> <input type="button" class="angka" value="-" onclick="input('-')"> </button> </td>	
+			</tr>
+			<tr>
+				<td> <input type="button" class="angka" value="4" onclick="input(4)"> </button> </td>
+				<td> <input type="button" class="angka" value="5" onclick="input(5)"> </button> </td>
+				<td> <input type="button" class="angka" value="6" onclick="input(6)"> </button> </td>
+				<td> <input type="button" class="angka" value="+" onclick="input('+')"> </button> </td>
+			</tr>
+			<tr>
+				<td> <input type="button" class="angka" value="1" onclick="input(1)"> </button> </td>
+				<td> <input type="button" class="angka" value="2" onclick="input(2)"> </button> </td>
+				<td> <input type="button" class="angka" value="3" onclick="input(3)"> </button> </td>
+				<td rowspan="2"> <input type="button" id="samadengan" class="angka" value="=" onclick="hitung()"> </button> </td>	
+			</tr>
+			<tr>
+				<td> <input type="button" class="angka"  value="." onclick="input('.')"> </button> </td>	
+				<td colspan="2"> <input type="button" class="angka" value="0" onclick="input(0)"> </button> </td>
+				
+			</tr>
+	</table>
+	</form>
+</body>
+</html>
